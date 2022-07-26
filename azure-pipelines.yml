@@ -19,5 +19,5 @@ steps:
     cd /personal-assessment/heroes-frontend
     npm install -g @angular/cli@latest
     npm install
-    ng build --prod
+    ng build
   displayName: 'npm install and build'

@@ -16,8 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    cd /personal-assessment/heroes-frontend
     npm install -g @angular/cli@latest
     npm install
-    ng build
+    ng build --prod
   displayName: 'npm install and build'

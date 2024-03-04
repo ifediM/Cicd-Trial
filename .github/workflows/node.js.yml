@@ -22,6 +22,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: heroes-frontend/package-lock.json
     - run: npm install -g @angular/cli@latest
     - run: npm install
     - run: ng build

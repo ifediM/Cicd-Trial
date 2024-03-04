@@ -26,8 +26,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: heroes-frontend/*
+    - run: npm install 
     - run: sudo npm install -g @angular/cli@latest
-    - run: npm install
     - run: ng build
     - run: pm2 restart api1
     

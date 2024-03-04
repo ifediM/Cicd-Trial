@@ -29,5 +29,5 @@ jobs:
     - run: npm install -g @angular/cli@latest
     - run: npm install
     - run: ng build
-    -run: pm2 restart api1
+    - run: pm2 restart api1
     

@@ -30,7 +30,7 @@ jobs:
         cache: 'npm'
         cache-dependency-path: /var/www/cicd/_work/Cicd-Trial/Cicd-Trial/heroes-frontend
     - run: npm install
-    - run: npm install -g @angular/cli@latest
+    - run: npm install @angular/cli@latest
     - run: ng build
     #- run: pm2 restart api1
     

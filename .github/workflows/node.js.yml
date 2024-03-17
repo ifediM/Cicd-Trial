@@ -20,13 +20,13 @@ jobs:
 
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       
       
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: ${{ 20.x }}
         cache: 'npm'
         cache-dependency-path: /var/www/cicd/_work/Cicd-Trial/Cicd-Trial/heroes-frontend
     - run: npm install

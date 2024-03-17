@@ -26,11 +26,11 @@ jobs:
       
       
       with:
-        node-version: ${{ 20.x }}
+        node-version: '20.x'
         cache: 'npm'
-        cache-dependency-path: /var/www/cicd/_work/Cicd-Trial/Cicd-Trial/heroes-frontend
+        cache-dependency-path: /var/www/cicd/_work/Cicd-Trial/Cicd-Trial/heroes-frontend/node_modules
     - run: npm install
-    - run: npm install @angular/cli
-    - run: ng build
+    - run: npm install -g @angular/cli
+    - run: ng build --configuration production
     #- run: pm2 restart api1
     

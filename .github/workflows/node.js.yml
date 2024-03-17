@@ -28,7 +28,7 @@ jobs:
       with:
         node-version: '20.x'
         cache: 'npm'
-        cache-dependency-path: /var/www/cicd/_work/Cicd-Trial/Cicd-Trial/heroes-frontend/node_modules
+        cache-dependency-path: /var/www/cicd/_work/Cicd-Trial/Cicd-Trial/heroes-frontend
     - run: npm install
     - run: npm install -g @angular/cli
     - run: ng build --configuration production

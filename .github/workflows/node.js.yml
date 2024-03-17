@@ -33,5 +33,5 @@ jobs:
     - run: npm install -g @angular/cli
     - run: ng build --configuration production
     - run: pm2 restart ecosystem.config.js
-    - run: systemctl restart nginx
+  
     
